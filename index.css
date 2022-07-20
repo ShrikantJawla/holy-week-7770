@@ -1,122 +1,306 @@
-*{
-    padding: 0%;
-    margin: 0%;
+/** @format */
+
+* {
+	padding: 0%;
+	margin: 0%;
 }
-footer{
-    background-color: #375d75;
-    padding: 70px;
-    color: #dbf1ff;
+footer {
+	background-color: #375d75;
+	padding: 70px;
+	color: #dbf1ff;
 }
-#footerContainer{
-    display: flex;
-    gap: 40px;
-    color: #dbf1ff;
-    font-weight: 400;
-    font-size: 17px;
-    font-family: Rubik;
+#footerContainer {
+	display: flex;
+	gap: 40px;
+	color: #dbf1ff;
+	font-weight: 400;
+	font-size: 17px;
+	font-family: Rubik;
 }
-#footerContainer>div:first-child>img{
-    width: 50%;
-    margin-bottom: -10px;
+#footerContainer > div:first-child > img {
+	width: 50%;
+	margin-bottom: -10px;
 }
-#footerContainer a{
-    color: #dbf1ff;
-    text-decoration: none;
+#footerContainer a {
+	color: #dbf1ff;
+	text-decoration: none;
 }
-#footerContainer>div{
-    width: 16.66666667%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+#footerContainer > div {
+	width: 16.66666667%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
 }
-#footerContainer>div>div:first-child>a{
-    color:white;
-    font-weight: 900;
-    font-size: 19px;
+#footerContainer > div > div:first-child > a {
+	color: white;
+	font-weight: 900;
+	font-size: 19px;
 }
-footer>div:nth-child(2){
-    margin-top: 30px;
-    font-family: Rubik;
-    font-size: 24px;
-    text-align: center;
+footer > div:nth-child(2) {
+	margin-top: 30px;
+	font-family: Rubik;
+	font-size: 24px;
+	text-align: center;
 }
-footer>div:nth-child(2)>p>a{
-    font-weight: bold;
-    color:white;
+footer > div:nth-child(2) > p > a {
+	font-weight: bold;
+	color: white;
 }
 /* Middle Part starts here */
-#middle{
-    height: 200px;
+#middle {
+	height: 200px;
 }
-#organise{
-    font-size: 80px;
+#organise {
+	font-size: 80px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	margin-top: 150px;
+	font-family: Avenirnextltpro, sans-serif;
+	margin-bottom: 40px;
+}
+#coordinate {
+	font-size: 30px;
+	text-align: center;
+	width: 85%;
+	margin: auto;
+	margin-top: 60px;
+	font-family: Avenirnextltpro, sans-serif;
+	margin-bottom: 80px;
+}
+#getStarted {
+	width: 200px;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 20px;
+	margin-bottom: 70px;
+	background-color: rgb(52, 52, 185);
+}
+#launchImg > img {
+	display: block;
+	margin: auto;
+	margin-bottom: 100px;
+}
+#trustedpTag {
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+#brandImgs {
+	width: 75%;
+	padding: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+}
+#kpmgImgs {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 150px;
+}
+#kpmgImgs > img {
+	height: 36px;
+	margin-top: 5px;
+}
+#coordinateTeam {
+	display: grid;
+	grid-template-columns: 27% 67%;
+	padding: 10px;
+	justify-content: space-between;
+	width: 85%;
+	margin: auto;
+	margin-bottom: 150px;
+}
+#coordinateTeam > div:first-child {
+	padding: 10px;
+}
+#coordinateTeam > div:first-child h1 {
+	margin-bottom: 25px;
+}
+#coordinateTeam > div:first-child p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+#coordinateTeam > div:first-child p:last-child {
+	font-family: "Avenir Next", sans-serif;
+}
+#coordinateTeam img {
+	width: 100%;
+	height: 90%;
+}
+
+#trackWork {
+	display: flex;
+	display: grid;
+	grid-template-columns: 67% 27%;
+	padding: 10px;
+	justify-content: space-between;
+	width: 85%;
+	margin: auto;
+	margin-bottom: 150px;
+}
+#trackWork > div img {
+	width: 100%;
+	height: 85%;
+}
+#trackWork h1 {
+	margin-bottom: 25px;
+}
+#trackWork p {
+	margin-bottom: 30px;
+}
+#trackWork p:last-child {
+	font-family: "Avenir Next", sans-serif;
+}
+#seeWorkDet {
+	color: rgb(79, 79, 216);
+	display: flex;
+	font-size: 30px;
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 150px;
+}
+#seeWorkDet p {
+	color: rgb(79, 79, 216);
+	font-size: 30px;
+}
+#flexible {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 90px;
+}
+#flexible>p {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#flexible > div {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-auto-rows: auto;
+	gap: 15px;
+    row-gap: 25px;
+    justify-content: space-between;
+    margin: auto;
+}
+#flexible > div > div {
+	padding: 60px;
+	border-radius: 80%;
+	background-color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#flexible > div > div:nth-child(even){
+    background-color: rgb(146, 218, 218);
+}
+#flexible > div > div > h1 {
+    margin-bottom: 15px;
+}
+#flexible > div > div:last-child{
+    flex-direction: row;
+    background-color: white;
+    border-radius: 0px;
+    font-size:20px;
+}
+#flexible > div > div > h3{
+    margin-bottom: 20px;
+}
+#flexible > div > div > p{
+    font-size: 23px;
+}
+#haveQuestion{
     text-align: center;
-    width: 80%;
-    margin: auto;
-    margin-top: 150px;
-    font-family:Avenirnextltpro,sans-serif;
-    margin-bottom: 40px;
-}
-#coordinate{
-    font-size: 30px;
-    text-align: center;
-    width: 85%;
-    margin: auto;
-    margin-top: 60px;
-    font-family:Avenirnextltpro,sans-serif;
-    margin-bottom: 80px;
-}
-#getStarted{
-    width: 200px;
-    border-radius: 5px;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 70px;
-    background-color: rgb(52, 52, 185);
-}
-#launchImg>img{
-    display: block;
-    margin: auto;
     margin-bottom: 100px;
 }
-#trustedpTag{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 60px;
+#haveQuestion>h1{
+    margin-bottom: 20px;
 }
-#brandImgs{
-    width: 75%;
-    padding: 30px;
+#haveQuestion>p{
     margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
+    width: 50%;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
-#kpmgImgs{
+#haveQuestion>div{
+    font-size: 19px;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    font-weight: bold;
+}
+#haveQuestion>div>a:hover{
+    text-decoration: none;
+}
+#wasteNoTime{
+    width: 86%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 55% 35%;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+#wasteNoTime>div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgba(255, 228, 196, 0.384);
+    padding: 80px 20px;
+    text-align: center;
+}
+#wasteNoTime>div>h1{
+    margin: auto;
+    margin-bottom: 28px;
+    width:70%;
+}
+#wasteNoTime>div:last-child>a{
+    color: blue;
+    border:1px solid black;
+    width: 180px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-decoration: none;
+	margin: auto;
+    margin-bottom: 20px;
+	padding: 18px;
+}
+#wasteNoTime>div>p{
+    font-size: 19px;
+}
+#wasteNoTime>div:first-child>p{
     width: 90%;
     margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 150px;
-}
-#kpmgImgs>img{
-    height: 36px;
+    margin-top: -17px;
 }
 
 
-@media screen and (max-width: 600px){
-    #footerContainer{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    #footerContainer>div{
-        width: 50%;
-    }
-}
 
+
+
+
+
+
+@media screen and (max-width: 600px) {
+	#footerContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	#footerContainer > div {
+		width: 50%;
+	}
+}
