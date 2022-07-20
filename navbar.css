@@ -1,0 +1,108 @@
+/** @format */
+
+* {
+	padding: 0px;
+	margin: 0%;
+}
+nav {
+	/* width: 98%; */
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding: 18px;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+}
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#logo {
+	width: 180px;
+	height: 60px;
+	margin-left: 40px;
+}
+#logo > a > img {
+	width: 100%;
+	height: 100%;
+}
+#navItems {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+	margin-right: 40px;
+	font-size: 19px;
+	font-weight: bold;
+}
+#navItems > a {
+	text-decoration: none;
+	color: blue;
+}
+#navItems > #getMyHours {
+	font-weight: normal;
+	padding: 12px;
+	color: white;
+	background-color: #3b8fc2;
+	border-radius: 5px;
+	font-family: Avenirnextltpro, sans-serif;
+	font-size: 19px;
+}
+#navItems > #getMyHours:hover {
+	cursor: pointer;
+	background-color: #175881;
+}
+#homeBtn {
+	background-color: black;
+	color: white;
+	padding: 11px 24px;
+	border-radius: 10px;
+	font-size: 17px;
+	font-weight: bold;
+	border: none;
+	display: none;
+}
+@media screen and (max-width: 600px) {
+	nav {
+		/* width: 97%; */
+	}
+	.menus > a {
+		display: none;
+	}
+	#homeBtn {
+		display: block;
+		float: right;
+	}
+	#homeBtn:hover {
+		padding: 14px;
+		padding: 11px 28px;
+	}
+	#navbar {
+		position: relative;
+	}
+	#navbar > .menus_anmol > a {
+		width: 95%;
+		padding: 23px 0px;
+		background-color: gray;
+		color: white;
+		text-align: center;
+	}
+	#navbar > .menus_anmol > a:hover {
+		background-color: darkolivegreen;
+	}
+	#navbar > .menus_anmol > #getMyHours {
+		padding: 23px 0px;
+	}
+	#navbar > .menus_anmol {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		width: 76%;
+		flex-direction: column;
+		gap: 1px;
+		position: absolute;
+		top: 60px;
+		right: 9%;
+        z-index: 1;
+	}
+	.menus_anmol #homeBtn {
+		display: none;
+	}
+}
