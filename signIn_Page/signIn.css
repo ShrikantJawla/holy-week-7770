@@ -39,3 +39,8 @@ form>input:last-child:hover{
 #signUpLink>a{
     font-weight: bold;
 }
+@media screen and (max-width:600px){
+    #signInForm{
+        width:75%;
+    }
+}

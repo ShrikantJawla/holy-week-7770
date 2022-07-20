@@ -44,9 +44,72 @@ footer>div:nth-child(2)>p>a{
     font-weight: bold;
     color:white;
 }
+/* Middle Part starts here */
 #middle{
     height: 200px;
 }
+#organise{
+    font-size: 80px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    font-family:Avenirnextltpro,sans-serif;
+    margin-bottom: 40px;
+}
+#coordinate{
+    font-size: 30px;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+    font-family:Avenirnextltpro,sans-serif;
+    margin-bottom: 80px;
+}
+#getStarted{
+    width: 200px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 70px;
+    background-color: rgb(52, 52, 185);
+}
+#launchImg>img{
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#trustedpTag{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#brandImgs{
+    width: 75%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+#kpmgImgs{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 150px;
+}
+#kpmgImgs>img{
+    height: 36px;
+}
+
+
 @media screen and (max-width: 600px){
     #footerContainer{
         display: grid;
