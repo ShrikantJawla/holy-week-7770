@@ -1,0 +1,41 @@
+#signUpForm{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 33%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form>label{
+    font-weight: bold;
+}
+form>input{
+    height: 25px;
+}
+form>input:last-child{
+    padding:14px;
+    padding-bottom:30px;
+    background-color: rgb(90, 90, 200);
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 24%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form>input:last-child:hover{
+    background-color: rgb(32, 32, 201);
+}
+#signInLink{
+    font-size: 19px;
+    display: flex;
+    justify-content: flex-end
+}
+#signInLink>a{
+    font-weight: bold;
+}
