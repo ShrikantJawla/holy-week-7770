@@ -3,6 +3,7 @@
 * {
 	padding: 0%;
 	margin: 0%;
+	box-sizing: border-box;
 }
 footer {
 	background-color: #375d75;
@@ -79,7 +80,7 @@ footer > div:nth-child(2) > p > a {
 	margin: auto;
 	padding: 20px;
 	margin-bottom: 70px;
-	background-color: rgb(52, 52, 185);
+	background-color: rgba(52, 52, 185, 0.825);
 }
 #launchImg > img {
 	display: block;
@@ -103,6 +104,7 @@ footer > div:nth-child(2) > p > a {
 	width: 90%;
 	margin: auto;
 	display: flex;
+	gap: 5px;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-bottom: 150px;
@@ -302,5 +304,36 @@ footer > div:nth-child(2) > p > a {
 	}
 	#footerContainer > div {
 		width: 50%;
+	}
+	#getStarted{
+		width: 98%;
+	}
+	#launchImg > img{
+		width: 98%;
+	}
+	#brandImgs{
+		width: 98%;
+	}
+	#brandImgs>img{
+		width: 32%;
+	}
+	#kpmgImgs{
+		width: 98%;
+	}
+	#kpmgImgs > img{
+		width: 16%;
+		height: 15px;
+	}
+	#coordinateTeam{
+		display:block;
+	}
+	#trackWork{
+		display: block;
+	}
+	#flexible> div{
+		display: block;
+	}
+	#wasteNoTime{
+		display: block;
 	}
 }

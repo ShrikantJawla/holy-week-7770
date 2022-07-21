@@ -3,10 +3,10 @@
 * {
 	padding: 0px;
 	margin: 0%;
+	box-sizing: border-box;
 }
 nav {
-	/* width: 98%; */
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	padding: 18px;
 	position: sticky;
 	top: 0px;
@@ -63,7 +63,6 @@ nav {
 }
 @media screen and (max-width: 600px) {
 	nav {
-		/* width: 97%; */
 	}
 	.menus > a {
 		display: none;
@@ -80,29 +79,28 @@ nav {
 		position: relative;
 	}
 	#navbar > .menus_anmol > a {
-		width: 95%;
-		padding: 23px 0px;
+		width: 100%;
+		padding: 23px 15px;
 		background-color: gray;
 		color: white;
 		text-align: center;
+		font-size: 22px;
 	}
 	#navbar > .menus_anmol > a:hover {
-		background-color: darkolivegreen;
+		background-color: rgba(0, 0, 0, 0.768);
 	}
 	#navbar > .menus_anmol > #getMyHours {
 		padding: 23px 0px;
 	}
 	#navbar > .menus_anmol {
-		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-		width: 76%;
+		box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+		width: 100%;
 		flex-direction: column;
-		gap: 1px;
+		gap: 2px;
 		position: absolute;
 		top: 60px;
-		right: 9%;
+		left: 0%;
         z-index: 1;
 	}
-	/* .menus_anmol #homeBtn {
-		display: none;
-	} */
+	
 }
