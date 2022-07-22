@@ -10,7 +10,8 @@ nav {
 	padding: 18px;
 	position: sticky;
 	top: 0px;
-	background-color: white;
+	background-color: beige;
+	border: 2px solid bisque;
 }
 #navbar {
 	display: flex;
