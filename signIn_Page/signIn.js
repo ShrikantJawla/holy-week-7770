@@ -6,13 +6,6 @@ let is_signed_inData = JSON.parse(localStorage.getItem("is_signed_in")) || [];
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
-	if (
-		form.email.value === "" ||
-		form.pass.value === ""
-	) {
-		alert("Please fill all the inputs!!!");
-		return;
-	}
 
 	let obj = {
 		email: form.email.value,
@@ -26,14 +19,22 @@ form.addEventListener("submit", (e) => {
 			obj["name"] = ele.name;
 		}
 	});
-    if (is_true) {
+	if (is_true) {
 		alert("sign in successful");
 		is_signed_inData = [];
 		is_signed_inData.push(obj);
 		localStorage.setItem("is_signed_in", JSON.stringify(is_signed_inData));
-        window.location.href = "../index.html";
-    } else {
-        alert("No such data found please sign up first!!");
-        return;
-    }
+		window.location.href = "../index.html";
+	} else {
+		alert("No such data found please sign up first!!");
+		return;
+	}
 });
+
+function signInEnable() {
+	if (form.email.value !== "" && form.pass.value !== "") {
+		document.getElementById("submitbtn").disabled = false;
+	} else {
+		document.getElementById("submitbtn").disabled = true;
+	}
+}

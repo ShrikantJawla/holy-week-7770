@@ -20,12 +20,12 @@
             <div id="signUpWelcome">
             <h1>Sign In</h1>
             </div>
-            <form action="">
+            <form>
                 <label for="email">EMAIL</label>
-                <input type="email" name="" id="email">
+                <input type="email" name="email" id="email" oninput="signInEnable()" required>
                 <label for="pass">PASSWORD</label>
-                <input type="password" name="" id="pass">
-                <input type="submit" value="SIGN IN">
+                <input type="password" name="pass" id="pass" oninput="signInEnable()" required>
+                <input id="submitbtn" type="submit" value="SIGN IN" disabled>
             </form>
             <div id="signUpLink">
                 <p>Not Signed up yet? <a href="../signUp_Page/signUp.html">Sign up</a></p>

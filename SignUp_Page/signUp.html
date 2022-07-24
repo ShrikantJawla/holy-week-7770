@@ -22,12 +22,12 @@
             </div>
             <form action="">
                 <label for="name">FULL NAME</label>
-                <input type="text" name="" id="name">
+                <input type="text" name="" id="name" oninput="submitEnable()" required>
                 <label for="email">EMAIL</label>
-                <input type="email" name="" id="email">
+                <input type="email" name="" id="email" oninput="submitEnable()" required>
                 <label for="pass">PASSWORD</label>
-                <input type="password" name="" id="pass">
-                <input type="submit" value="SIGN UP">
+                <input type="password" name="" id="pass" oninput="submitEnable()" required>
+                <input id="submitbtn" type="submit" value="SIGN UP" disabled>
             </form>
             <div id="signInLink">
                 <p>Already Signed up <a href="../signIn_Page/signIn.html">Sign in</a></p>
