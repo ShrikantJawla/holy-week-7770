@@ -5,14 +5,6 @@ let data = JSON.parse(localStorage.getItem("signUp-data")) || [];
 let form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
 	e.preventDefault();
-	if (
-		form.name.value === "" ||
-		form.email.value === "" ||
-		form.pass.value === ""
-	) {
-		alert("Please fill all the inputs!!!");
-		return;
-	}
 
 	let obj = {
 		name: form.name.value,
@@ -32,5 +24,17 @@ form.addEventListener("submit", (e) => {
 	}
 	data.push(obj);
 	localStorage.setItem("signUp-data", JSON.stringify(data));
-    window.location.href = "../signIn_Page/signIn.html";
+	window.location.href = "../signIn_Page/signIn.html";
 });
+
+function submitEnable() {
+	if (
+		form.name.value !== "" &&
+		form.email.value !== "" &&
+		form.pass.value !== ""
+	) {
+		document.getElementById("submitbtn").disabled= false;
+	}else{
+		document.getElementById("submitbtn").disabled = true;
+	}
+}
